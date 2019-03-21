@@ -1,6 +1,6 @@
 {
   "name": "@fullstackjs/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple cli tool for generating fullstack-js-online starter projects",
   "main": "src/index.js",
   "author": "Kati Frantz",
