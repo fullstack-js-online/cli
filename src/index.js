@@ -15,12 +15,13 @@ const chalk = require('chalk')
 const program = require('commander')
 const inquirer = require('inquirer')
 const setupMernMysql = require('./projects/mern-mysql')
+const setupMernMongodb = require('./projects/mern-mongodb')
 const exec = util.promisify(require('child_process').exec)
 
 const results = {}
 const projects = {
   'MERN - MySQL': 'https://github.com/fullstack-js-online/fullstack-js-mern',
-  'MERN - MongoDB': '' 
+  'MERN - MongoDB': 'https://github.com/fullstack-js-online/fullstack-js-mern-mongodb' 
 }
 
 const selectProject = () => inquirer.prompt([{
@@ -88,6 +89,9 @@ program.command('init')
     switch (results.project) {
       case 'MERN - MySQL':
         await setupMernMysql(results)
+        return
+      case 'MERN - MongoDB':
+        await setupMernMongodb(results)
         return
       default:
         break;
