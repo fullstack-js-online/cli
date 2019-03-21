@@ -1,0 +1,26 @@
+{
+  "name": "@fullstackjs/cli",
+  "version": "1.0.0",
+  "description": "Simple cli tool for generating fullstack-js-online starter projects",
+  "main": "src/index.js",
+  "author": "Kati Frantz",
+  "license": "MIT",
+  "repository": "https://github.com/fullstack-js-online/cli",
+  "bin": {
+    "fullstackjs": "./src/index.js"
+  },
+  "keywords": [
+    "fullstackjs",
+    "nodejs",
+    "cli",
+    "installer"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.2",
+    "ora": "^3.2.0",
+    "randomstring": "^1.1.5",
+    "rimraf": "^2.6.3"
+  }
+}
