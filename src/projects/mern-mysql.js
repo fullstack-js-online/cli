@@ -38,6 +38,7 @@ const setupMernMysql = async ({ name: projectName }) => {
 
   const { database_username } = await inquirer.prompt([{
     type: 'input',
+    default: 'root',
     name: 'database_username',
     message: 'Enter the mysql database user'
   }])
